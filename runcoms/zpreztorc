@@ -6,14 +6,17 @@
 #
 
 # alias and other things
-alias vim=nvim
 eval "$(hub alias -s)"
 eval "$(fasd --init auto)"
 
+export VISUAL='nvim'
+
 alias v='f -e nvim'
+alias vim="nvim"
+alias sudo="sudo "
 
 # this will install
-PATH=$PATH:/Applications/MATLAB_R2015a.app/bin/maci64:~/.cargo/bin:~/.cabal/bin
+PATH=$PATH:~/.cargo/bin:~/.cabal/bin
 #
 # General
 #
