@@ -5,18 +5,9 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-# alias and other things
-eval "$(hub alias -s)"
-eval "$(fasd --init auto)"
-
-export VISUAL='nvim'
-
-alias v='f -e nvim'
-alias vim="nvim"
-alias sudo="sudo "
 
 # this will install
-PATH=$PATH:~/.cargo/bin:~/.cabal/bin
+# PATH=$PATH:~/.cargo/bin:~/.cabal/bin
 #
 # General
 #

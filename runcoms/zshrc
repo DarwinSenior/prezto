@@ -12,3 +12,12 @@ fi
 
 # Customize to your needs...
 
+# alias and other things
+eval "$(hub alias -s)"
+eval "$(fasd --init auto)"
+
+export VISUAL='nvim'
+
+alias v='f -e nvim'
+alias vim="nvim"
+alias sudo="sudo "
