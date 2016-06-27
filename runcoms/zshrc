@@ -17,7 +17,8 @@ eval "$(hub alias -s)"
 eval "$(fasd --init auto)"
 
 export VISUAL='nvim'
-
+export TERM="xterm-256color"
+export PATH=~/.local/bin:$PATH
 alias v='f -e nvim'
 alias vim="nvim"
 alias sudo="sudo "
