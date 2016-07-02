@@ -12,13 +12,20 @@ fi
 
 # Customize to your needs...
 
+export VISUAL='nvim'
+export TERM="xterm-256color"
+export PATH=$HOME/.local/bin:$HOME/.linuxbrew/bin:$PATH
+export PATH=$PATH:/usr/local/texlive/2016/bin/x86_64-linux
+export LD_LIBRARY_PATH=/usr/lib:$HOME/.linuxbrew/lib/
+export MANPATH=$HOME/.linuxbrew/share/man:$MANPATH
+export INFOPATH=$HOME/.linuxbrew/share/info:$INFOPATH
+
 # alias and other things
 eval "$(hub alias -s)"
 eval "$(fasd --init auto)"
 
-export VISUAL='nvim'
-export TERM="xterm-256color"
-export PATH=~/.local/bin:$PATH
 alias v='f -e nvim'
 alias vim="nvim"
 alias sudo="sudo "
+
+alias usbexec="sudo mount -o remount,exec"
