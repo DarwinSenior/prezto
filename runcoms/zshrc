@@ -14,7 +14,6 @@ fi
 
 # alias and other things
 eval "$(fasd --init auto)"
-eval "$(hub alias -s)"
 
 alias v='f -e nvim'
 alias vim="nvim"
