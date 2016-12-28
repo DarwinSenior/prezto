@@ -14,6 +14,7 @@ fi
 
 # alias and other things
 eval "$(fasd --init auto)"
+[-f ~/.fzf.zsh] && source ~/.fzf.zsh
 
 alias v='f -e nvim'
 alias vim="nvim"
@@ -24,3 +25,16 @@ alias tmux="tmux -2"
 
 alias usbexec="sudo mount -o remount,exec"
 alias steam-wine='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-cef-sandbox >/dev/null 2>&1 &'
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+export LANG=en_US.UTF-8
+export PATH=$HOME/.local/bin:$PATH:$HOME/.cargo/bin/:$HOME/.npm-global/bin
+export VISUAL=nvim
+export EDITOR='vi'
+export TERM="xterm-256color"
+export PAGER='less'
+
+export GTAGSCONF=/usr/share/gtags/gtags.conf
+export GTAGSLABEL=pygments
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
